@@ -330,9 +330,15 @@ legend {
   padding: 0;
 }
 
-ol,
+/*ol,
 ul,
 menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}*/
+
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -513,13 +519,12 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.relative {
-  position: relative;
+.fixed {
+  position: fixed;
 }
 
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.relative {
+  position: relative;
 }
 
 .my-4 {
@@ -527,20 +532,17 @@ video {
   margin-bottom: 1rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mt-16 {
   margin-top: 4rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .block {
@@ -567,12 +569,12 @@ video {
   width: 100%;
 }
 
-.max-w-\[100vw\] {
-  max-width: 100vw;
-}
-
 .max-w-4xl {
   max-width: 56rem;
+}
+
+.max-w-\[100vw\] {
+  max-width: 100vw;
 }
 
 .flex-col {
@@ -605,11 +607,6 @@ video {
   border-style: double;
 }
 
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
 .border-blue-800 {
   --tw-border-opacity: 1;
   border-color: rgb(30 64 175 / var(--tw-border-opacity));
@@ -618,6 +615,11 @@ video {
 .border-pink-400 {
   --tw-border-opacity: 1;
   border-color: rgb(244 114 182 / var(--tw-border-opacity));
+}
+
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -634,16 +636,24 @@ video {
   background-image: url('/images/water.webp');
 }
 
-.bg-\[url\(\'\/images\/cyberscape\.gif\'\)\] {
-  background-image: url('/images/cyberscape.gif');
+.bg-\[url\(\'\/images\/revnet-long\.png\'\)\] {
+  background-image: url('/images/revnet-long.png');
 }
 
 .bg-\[url\(\'\/images\/aquagalaxy\.gif\'\)\] {
   background-image: url('/images/aquagalaxy.gif');
 }
 
-.p-16 {
-  padding: 4rem;
+.bg-\[url\(\'\/images\/cyberscape\.gif\'\)\] {
+  background-image: url('/images/cyberscape.gif');
+}
+
+.bg-\[url\(\'\/images\/revnet-small\.png\'\)\] {
+  background-image: url('/images/revnet-small.png');
+}
+
+.bg-\[url\(\'\/images\/revnet-tiny\.png\'\)\] {
+  background-image: url('/images/revnet-tiny.png');
 }
 
 .p-4 {
@@ -663,18 +673,23 @@ video {
   line-height: 1.75rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
-.text-red-700 {
-  --tw-text-opacity: 1;
-  color: rgb(185 28 28 / var(--tw-text-opacity));
+.font-bold {
+  font-weight: 700;
 }
 
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 #header {
@@ -845,30 +860,17 @@ h3 > a:hover {
   }
 }
 
-.hover\:cursor-pointer:hover {
-  cursor: pointer;
-}
-
-.hover\:bg-\[url\(\'\/images\/bgskulls\.jpg\'\)\]:hover {
-  background-image: url('/images/bgskulls.jpg');
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 @media (min-width: 1024px) {
   .lg\:m-auto {
     margin: auto;
   }
 
-  .lg\:mb-16 {
-    margin-bottom: 4rem;
-  }
-
   .lg\:mt-16 {
     margin-top: 4rem;
+  }
+
+  .lg\:mb-16 {
+    margin-bottom: 4rem;
   }
 
   .lg\:w-auto {
